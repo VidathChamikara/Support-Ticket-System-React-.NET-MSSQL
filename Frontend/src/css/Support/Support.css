@@ -1,0 +1,227 @@
+.page-heading{
+  margin: 0 0 0 70px;
+  color: #613faf;
+  font-size: 22px;
+  font-weight: bold;
+}
+/* Not Use */
+.table-heading{ 
+  margin: 0 0 30px 70px;
+  color: #482890;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.box-shadow {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 30px 0 0 65px;
+  }
+
+  .support-table {
+    width: 100%;        
+    vertical-align: middle;    
+  }
+  .support-table thead{
+    height: 50px;    
+  }
+  .support-table td,
+  .support-table th {
+    border: none;
+    padding: 0.5rem;
+    text-align: left;    
+  }
+  .support-table th {
+    font-size: 15px;
+  }
+  .support-table td {
+    height: 45px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color:  rgba(125, 118, 118, 0.992);
+  }
+  
+  .support-table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+  }
+
+  .pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  
+
+  .success-icon {
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+  }
+  
+  .success-message {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .details-container {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .detail span {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  
+/* Issue Type Card css */
+
+.card-view-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.card-item {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+  margin-left: 70px; /* Adjust the left margin value as needed */
+  align-items: center;
+  text-align: center;
+  width: 380px;
+  height: 150px;
+}
+
+@media (max-width: 768px) {
+  .card-item {
+    margin-left: 0;
+  }
+}
+
+.card-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card-button-group button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.card-button-group button:first-child {
+  background-color: #482890;
+  color: #fff;
+}
+
+.card-button-group button:last-child {
+  background-color: #FF615A;
+  color: #fff;
+}
+/* Agent Card css */
+.agent-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+
+.agent-card {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+}
+.agent-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.agent-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: fill;
+}
+
+.agent-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.agent-position {
+  font-size: 14px;
+  color: #888;
+}
+
+.agent-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+.edit-button {
+  background-color: #482890;
+}
+
+.delete-button {
+  background-color: #FF615A;
+}
+
+@media (max-width: 768px) {
+  .agent-card-container {
+    justify-content: flex-start;
+  }
+
+  .agent-card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+  }
+}
+
